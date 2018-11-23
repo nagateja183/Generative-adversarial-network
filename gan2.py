@@ -21,7 +21,7 @@ def deprocess(x):
 def make_labels(size):
     return np.ones([size, 1]), np.zeros([size, 1])
 (X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
-
+#change the following few lines(till 40) in order to train on every digit.
 x1 =[]
 y1 = []
 for i in range(X_train.shape[0]):
